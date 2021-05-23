@@ -1,3 +1,7 @@
+#Demo
+Working app can be accessed at:
+http://35.239.232.208/projects/lead-manager/build/index.html
+
 #Implementation Approach
 ##Front End
 The UI has been implemented using `BootStrap React components`

@@ -1,0 +1,85 @@
+.lead{
+  margin: 28px 0;
+  box-shadow: 0px 1px 3px #888888;
+  &-name{
+    font-size: 25px;
+  }
+  &-avatar{
+    border-radius: 50%;
+    background-color: #ff963b;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+  }
+  &-time{
+    font-size: 15px;
+    display: block;
+  }
+  &-metadata, &-contact{
+    .badge{
+      margin-right: 25px;
+    }
+    .icon, .data{
+      font-size: 15px;
+    }
+    .data{
+      color: #4e4e4e;
+      font-weight: normal;
+      margin-left: 15px;
+    }
+    .price{
+      font-weight: normal;
+    }
+  }
+
+  &-title{
+    padding: 20px 0;
+  }
+
+  &-description{
+    font-size: 17px;
+  }
+
+  &-buttons{
+    .button + .button{
+      margin-left: 14px;
+    }
+    .button.primary{
+      padding: 8px 30px;
+      border: none;
+      border-radius: 3px;
+      border-bottom-width: 4px;
+      border-bottom-style: solid;
+
+      &.accept{
+        background-color: #ff6500;
+        border-bottom-color: #c04601;
+        &:active{
+          border-bottom-color: #ff6500;
+          background-color: #c04601;
+        }
+      }
+
+      &.decline{
+        background-color: #eeeeee;
+        border-bottom-color: #bebebe;
+        color: #575757;
+        &:active{
+          border-bottom-color: #eeeeee;
+          background-color: #bebebe;
+        }
+      }
+
+    }
+  }
+
+  &-invitation{
+    .label{
+      font-weight: normal;
+    }
+  }
+}

@@ -11,7 +11,7 @@ const mockAPI = {
 				const data = JSON.parse(localStorage.getItem('apiData'))
 				const newLeads = data.filter((lead) => lead.status === 'new')
 				resolve(newLeads)
-			}, 1000)
+			}, 500)
 		})
 	},
 	fetchAcceptedLeads(){
@@ -20,7 +20,7 @@ const mockAPI = {
 				const data = JSON.parse(localStorage.getItem('apiData'))
 				const acceptedLeads = data.filter((lead) => lead.status === 'accepted')
 				resolve(acceptedLeads)
-			}, 1000)
+			}, 500)
 		})
 	},
 	updateLeadStatus(id, status){
@@ -34,7 +34,7 @@ const mockAPI = {
 				})
 				localStorage.setItem('apiData', JSON.stringify(data))
 				resolve(true)
-			}, 1000)
+			}, 500)
 		})
 	}
 }

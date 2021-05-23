@@ -14,3 +14,9 @@ Functionality
 There were issues with running the provided `docker boilerplate` on my local.
 
 So, I use `localStorage` for persisting data. And I've implemented a module `mockAPI`, that reads/writes from `localStorage` in `async` fashion (using `setTimeout`), to mock API calls. Replacing `setTimeout` with real api end point call would work as well.
+
+##Further improvements
+- Build real API end points 
+- Create better progress indicators on the front-end, when data is being fetched from the server
+- Add toast notifications
+- Add drag and drop feature, to enable user to drag a card from ``Invited`` tab to `Accepted` tab

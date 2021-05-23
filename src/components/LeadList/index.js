@@ -1,6 +1,6 @@
 import Lead from '../Lead'
-import fragment from 'react'
 import Alert from 'react-bootstrap/Alert'
+import React from "react"
 
 function LeadList(props){
 	const {refreshRenderedLeads, leadList, listType, fetchInProgress} = props
@@ -18,9 +18,9 @@ function LeadList(props){
 		})
 	}
 	return (
-		<fragment>
+		<React.Fragment>
 			{ listToRender }
-		</fragment>
+		</React.Fragment>
 	)
 }
 
